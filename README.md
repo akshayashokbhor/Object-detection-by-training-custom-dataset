@@ -40,6 +40,6 @@ pretrained model and un-zip it to pretrained folder<br>
 16.then clone tensorflow model api file via !git clone https://github.com/tensorflow/models.git<br>
 17.then start training by...!python3 object_detection/model_main.py --model_dir='/content/drive/My Drive/Colab Notebooks/PlateDetectionFasterRCNNv4/final_model' --pipeline_config_path='/content/training/faster_rcnn_inception_v2_coco.config'<br>
 18.after training for almost  4 hours ..interrupt the training and download the "frozen_inference_graph.pb" file to local system<br>
-19.Then open Object_detection_video.py file in sublime text editior and upload that model file to that script and detects the plates...count and updated same to database...
+19.Then open Object_detection_video.py file in sublime text editior and upload that model file to that script and detects the plates...count and updated same to database...<br>
 20.There are few False positive results we were get...we told same to the company...<br>
 21.But company satisfied with our work...as they get almost correct data of how many plates actually generate on daily basis....
