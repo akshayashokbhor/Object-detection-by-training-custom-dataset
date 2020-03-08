@@ -13,7 +13,7 @@ now we used that and trained that script on our plate data which was labelled an
 The sequence is same but change is,we does not train that script on local machine as my laptop is not installed with GPU till ,instead i modify that script according to google colab and run in colab with GPU..
 
 The sequence is:
-1.Initially i gather pictures from the video send by the company...i took various images and store them to specific folder
+1.Initially i gather pictures from the video send by the company...i took various images and store them to specific folder<br>
 2.After that to generate train data, i used  labellmg tool to annotate data and name the label 'plate'..
 3.Then i split data into train and test...as 80 -20%
 4.after that i ran xml_to_csv.py file where i get an csv file with an coordinated of bounding rectangle as features with class label
