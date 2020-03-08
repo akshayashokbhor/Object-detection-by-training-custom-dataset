@@ -12,24 +12,24 @@ now we used that and trained that script on our plate data which was labelled an
 
 The sequence is same but change is,we does not train that script on local machine as my laptop is not installed with GPU till ,instead i modify that script according to google colab and run in colab with GPU..
 
-The sequence is:
+The sequence is:<br>
 1.Initially i gather pictures from the video send by the company...i took various images and store them to specific folder<br>
-2.After that to generate train data, i used  labellmg tool to annotate data and name the label 'plate'..
-3.Then i split data into train and test...as 80 -20%
-4.after that i ran xml_to_csv.py file where i get an csv file with an coordinated of bounding rectangle as features with class label
-5.Now i have train_label.csv file and test_label.csv file
-6.then i ran generate_tfrecord.py file,before that i made some changes in that such as ...change class label=1 and modify code...
-7.now i got train.record and test.record file which serve as the input to model as train and test during training.
-8.the i generate labelmap.pbtxt file which contaion label id and label name and saved with same extension.
-9.now i modify faster_rcnn_inception_v2_config file
-this is important file as this contains the labelmap.pbtxt path,train data path,test data path, number of class label..
-carefully done modification and saved...
+2.After that to generate train data, i used  labellmg tool to annotate data and name the label 'plate'..<br>
+3.Then i split data into train and test...as 80 -20%<br>
+4.after that i ran xml_to_csv.py file where i get an csv file with an coordinated of bounding rectangle as features with class label<br>
+5.Now i have train_label.csv file and test_label.csv file<br>
+6.then i ran generate_tfrecord.py file,before that i made some changes in that such as ...change class label=1 and modify code...<br>
+7.now i got train.record and test.record file which serve as the input to model as train and test during training.<br>
+8.the i generate labelmap.pbtxt file which contaion label id and label name and saved with same extension.<br>
+9.now i modify faster_rcnn_inception_v2_config file<br>
+this is important file as this contains the labelmap.pbtxt path,train data path,test data path, number of class label..<br>
+carefully done modification and saved...<br>
 
-10.Now i uploaded the all four file generated here to google drive ,they are
-train.record
-test.record
-labellmap.pbtxt
-faster_rcnn_inception_v2_config
+10.Now i uploaded the all four file generated here to google drive ,they are<br>
+train.record<br>
+test.record<br>
+labellmap.pbtxt<br>
+faster_rcnn_inception_v2_config<br>
 
-11.Now start with  google colab....
+11.Now start with  google colab....<br>
 12.
